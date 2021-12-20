@@ -1,5 +1,6 @@
 ---
-title: "CupertinoTabBarによるBottomNavigationBar機能搭載時に、pushNamedで出力されるエラーの解決方法" emoji: "📑"
+title: "CupertinoTabBarによるBottomNavigationBar機能搭載時に、pushNamedで出力されるエラーの解決方法"
+emoji: "📑"
 type: "tech"
 topics: ["flutter", "dart", "メモ"]
 published: true
