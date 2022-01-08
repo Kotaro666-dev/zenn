@@ -3,7 +3,7 @@ title: "フラグメントがViewPager内で画面表示されていることを
 emoji: "🌟"
 type: "tech"
 topics: ["Android", "Kotlin"]
-published: false
+published: true
 ---
 
 # 目的
