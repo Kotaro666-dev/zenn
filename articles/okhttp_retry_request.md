@@ -3,7 +3,7 @@ title: "【Android/Kotlin】OkHttpでHTTPリクエスト失敗時にリトライ
 emoji: "📱"
 type: "tech"
 topics: ["Android", "Kotlin", "OkHttp"]
-published: false
+published: true
 ---
 
 # 目的
