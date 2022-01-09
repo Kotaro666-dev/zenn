@@ -28,11 +28,11 @@ Interceptors でコントロールできる層は以下の 2 つがあります�
 1. Application interceptors
 2. Network Interceptors
 
-![](/images/okhttp_retry_request/image_interceptors.png)
+![](/images/okhttp_retry_request/interceptors.png)
 
-出典：https://square.github.io/okhttp/interceptors/ （赤枠は筆者が追記）
+出典：https://square.github.io/okhttp/interceptors/
 
-今回使用する層は、 **上記の画像にて赤枠で囲まれた `Application interceptors` となります。**
+今回使用する層は、 **上記の画像の上部側 `Application interceptors` となります。**
 
 その理由は、`Application interceptors` にはリトライして複数回の HTTP リクエストができることが書かれているからです。
 
