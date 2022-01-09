@@ -15,7 +15,7 @@ OkHttp を使って、HTTP リクエスト（今回の例では GET メソッド
 OkHttpClient のインスタンス生成時に、こちら側で用意した Intercepters を登録し、HTTP リクエストとレスポンス間を監視する。
 監視している中で、リクエストに失敗した場合に、リトライをするようにコントロールする。
 
-# Interceptorsとは？
+# Interceptors とは？
 
 OkHttp ライブラリを開発する Square の[公式ドキュメント](https://square.github.io/okhttp/interceptors/#interceptors)には、以下のようにまとめられています。
 
@@ -23,12 +23,12 @@ OkHttp ライブラリを開発する Square の[公式ドキュメント](https
 
 今回の目的である HTTP リクエストの複数回リトライができそうなことが書いてありますね。
 
-Interceptors でコントロールできる層は以下の2つがあります。
+Interceptors でコントロールできる層は以下の 2 つがあります。
 
 1. Application interceptors
 2. Network Interceptors
 
-![](/images/image_interceptors.png)
+![](/images/okhttp_retry_request/image_interceptors.png)
 
 出典：https://square.github.io/okhttp/interceptors/ （赤枠は筆者が追記）
 
@@ -55,11 +55,11 @@ Interceptors でコントロールできる層は以下の2つがあります。
 
 HTTP リクエストに成功した場合には以下のような出力となります。
 
-![](/images/image_success.png)
+![](/images/okhttp_retry_request/request_success.png)
 
 反対に、HTTP リクエストに失敗し、Interceptors を使って 3 回リトライしても失敗している場合には、以下のような出力となります。
 
-![](/images/image_failure.png)
+![](/images/okhttp_retry_request/request_failure.png)
 
 では、以下で実際のコード例をみていきましょう。
 
@@ -136,7 +136,7 @@ class Repository {
 ## Interceptor クラス
 
 こちらのクラスが今回の目的のキーとなる箇所です。
-OkHttp のクライアント生成時に `addIterceptor` メソッドに渡していた Interceptor を作っていきます。
+OkHttp のクライアント生成時に `addIterceptor` メソッドに渡していた RetryInterceptor を作っていきます。
 
 `Interceptor` クラスを継承してクラスを作り、`intercept` メソッドをオーバーライドします。
 あとは、この中に自分が行いたい処理をカスタマイズしていきます。
@@ -180,14 +180,16 @@ class RetryInterceptor : Interceptor {
 ```
 
 :::message alert
+**【注意】**
 リクエストをリトライする前に、取得済みのレスポンスをクローズしない場合、以下の例外が発生しリトライが行われません。
 
 ```
 java.lang.IllegalStateException: cannot make a new request because the previous response is still open: please call response.close()
 ```
+
 :::
 
-# HTTPリクエスト失敗時のコンソール出力
+# HTTP リクエスト失敗時のコンソール出力
 
 以下のように、しっかりと 3 回リトライされていることが伺えます。
 そして、リクエスト失敗して投げられた例外をキャッチして、レスポンスの中身が出力されています。
