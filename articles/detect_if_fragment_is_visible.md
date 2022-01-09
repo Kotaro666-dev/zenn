@@ -57,7 +57,7 @@ override fun setMenuVisibility(menuVisible: Boolean) {
 
 今回作ったサンプルアプリは、タブ遷移が行われ、各ボトムタブバーを生成するフラグメントが表示されるごとにダイアログを表示するものとなります。
 
-![](/images/sample_gif.gif)
+![](/images/detect_if_fragment_is_visible/sample_gif.gif)
 
 # コード例
 
@@ -179,10 +179,6 @@ class MyPageFragment : Fragment() {
 
 参考までに、表示しているカスタムダイアログとなります。
 
-:::message
-`setCanceledOnTouchOutside` を `false` に設定することで、ダイアログの外側をタップしてもダイアログが閉じないように設定することができます。
-:::
-
 ```Kotlin: CustomDialog.kt
 class CustomDialog(
     private val title: String,
@@ -203,6 +199,10 @@ class CustomDialog(
     }
 }
 ```
+
+:::message
+`setCanceledOnTouchOutside` を `false` に設定することで、ダイアログの外側をタップしてもダイアログが閉じないように設定することができます。
+:::
 
 # 参考資料
 
