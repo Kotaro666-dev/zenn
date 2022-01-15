@@ -3,7 +3,7 @@ title: "エンジニア1年目の失敗談"
 emoji: "😨"
 type: "tech"
 topics: ["初心者", "ポエム", "失敗談"]
-published: false
+published: true
 ---
 
 # はじめに
