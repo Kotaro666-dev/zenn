@@ -227,7 +227,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -6
 1. 渡される日付の文字列が空文字だったとき
 2. 渡される日付の文字列が想定しているフォーマットではなかったとき
 
-```
+```Kotlin
 @Test
 fun `Return false when date is empty string`() {
     val result = viewModel.isDateInRange("")
