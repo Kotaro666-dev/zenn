@@ -3,7 +3,7 @@ title: "【Android/Kotlin】JUnit4 によるユニットテストを試してみ
 emoji: "🐡"
 type: "tech"
 topics: ["Android", "Kotlin", "ユニットテスト", "JUnit"]
-published: false
+published: true
 ---
 
 # 目的
