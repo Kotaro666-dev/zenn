@@ -63,7 +63,7 @@ Flutter 開発よりも楽しく Android 開発をしていて、毎日が楽し
 
 Android 開発に関心のある方は、これら公式のトレーニング教材（無料）をやってみると良いと思います。
 
-話変わって、iOS側担当の同僚に聞くと、iOS側は公式ドキュメントがあまり整備されておらず、ドキュメントで詰まっている問題解決することがなかなか難しいと聞きます。
+話変わって、iOS 側担当の同僚に聞くと、iOS 側は公式ドキュメントがあまり整備されておらず、ドキュメントで詰まっている問題解決することがなかなか難しいと聞きます。
 
 :::message alert
 公式ドキュメントには日本語ページも用意されていますが、項目によっては情報が古かったりする場合があることにはご注意ください。
@@ -83,7 +83,7 @@ Android 開発では、公式チームが MVVM （Model - View - ViewModel）と
 
 今回アサインされたプロジェクトでは、この MVVM にクリーンアーキテクチャで提唱されている UseCase や画面遷移等の責務を持つ Coordinator を導入しました。
 
-![](/images/mvvm_architecture.png)
+![](/images/reveiw_android_development/mvvm_architecture.png)
 
 出典：[アプリ アーキテクチャ ガイド](https://developer.android.com/jetpack/guide)
 
@@ -98,7 +98,7 @@ Android 開発では、公式チームが MVVM （Model - View - ViewModel）と
 ちなみに、先日には上記の引用画像で示した公式のアーキテクチャに変更が加わり、レイヤーごとに区分されるようになりました。
 中身は大きく変化していませんが、新たにオプションとして UseCase（Domain レイヤー）の導入が加わりました。
 
-![](/images/new_architecture.png)
+![](/images/reveiw_android_development/new_architecture.png)
 
 出典：[Guide to app architecture](https://developer.android.com/jetpack/guide)
 
@@ -123,9 +123,8 @@ Flutter 開発時には、IDE が重くなったりすることがよくあり�
 
 その一方で、Android 開発になってからは、そのようなストレスを感じることがほぼなくなり、毎日快適に開発ができています。
 
-また、JetBrains が Kotlin を開発しているということもあり、Kotlin へのIDEの提案してくれるレベルが非常に高いです。
+また、JetBrains が Kotlin を開発しているということもあり、Kotlin への IDE の提案してくれるレベルが非常に高いです。
 日々、`Opt + Enter` にお世話になりまくりです。
-
 
 そして、Flutter 開発ではできなかった IDE の最新バージョンへのアップデートもどんどん行うことができ、新しいツールを業務レベルで使っていくことができるのは楽しいなと思います。
 
@@ -137,7 +136,7 @@ Flutter 開発では、バージョン上げるとすぐにビルドできなく
 
 Android 開発での UI 構築は XML でレイアウトを書いていきます。
 
-![](/images/xml_layout_example.png)
+![](/images/reveiw_android_development/xml_layout_example.png)
 
 ただし、XML でレイアウトを書いていく工程はけっこう大変です。
 
@@ -169,8 +168,8 @@ Android 開発での UI 構築は XML でレイアウトを書いていきます
 Android how to change positive button text color in alert dialog
 ```
 
-すると、検索結果は往々にして3年前とかの Stack Overflow の質問で、かつ中身は Java です。
-また、Kotlinの対応方法があっても、deprecatedしていることも多いため、最新の対応方法を見つける必要があったりします。
+すると、検索結果は往々にして 3 年前とかの Stack Overflow の質問で、かつ中身は Java です。
+また、Kotlin の対応方法があっても、deprecated していることも多いため、最新の対応方法を見つける必要があったりします。
 
 Flutter は比較的新しい技術であり、世界的にも流行りの技術でもあるため、常に最新の回答を見出すことができます。
 
@@ -196,7 +195,7 @@ Android 開発者は基本的にすごい出来るエンジニアが多いので
 
 42Tokyo では部活動のような「スマホアプリ部」があり、僕も初期から参加させてもらっています。
 
-現在スマホアプリ部では、 Android 開発に関心を持って情報交換している学生は僕とメルカリで現役で働いている強強エンジニアのゆー◯んさんだけです。
+現在スマホアプリ部では、 Android 開発に関心を持って情報交換している学生は僕とメルカリで現役で働いている強強エンジニアのゆー ◯ んさんだけです。
 
 Android 開発に関心のある方、良かったら一緒に情報交換しませんか？
 
