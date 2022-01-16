@@ -1,6 +1,6 @@
 ---
 title: "コルーチンの基本的な使い方（並行処理/並列処理）"
-emoji: "🎉"
+emoji: "✍🏻"
 type: "tech"
 topics: ["Kotlin", "Android", "Coroutine", "コルーチン"]
 published: false
@@ -189,6 +189,41 @@ fun requestApiWithLaunchAndJoin() {
         _isLoading.value = false    // 5. ローディング完了状態にする
     }
 }
+```
+
+# 環境
+
+## 使用ライブラリ
+
+```
+dependencies {
+    /**
+     * ViewModel ライブラリ
+     */
+
+    def lifecycle_version = "2.4.0"
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    // ViewModel utilities for Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+
+    /**
+     * Kotlin Coroutine ライブラリ
+     */
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+}
+```
+
+## 開発環境
+
+```
+Kotlin version: 1.6.10
 ```
 
 # サンプルコード
