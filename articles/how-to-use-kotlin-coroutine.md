@@ -85,8 +85,8 @@ suspend fun example() {
 今回用意したサンプルプロジェクトは 3 パターンを用意しました。
 
 1. 並行処理
-2. async/await を使った並列処理
-3. launch/join を使った並列処理
+2. 並列処理（async/await）
+3. 並列処理（launch/join）
 
 ## 1. 並行処理
 
@@ -137,7 +137,7 @@ private suspend fun fetchApi1() {
 
 ![](/images/how-to-use-kotlin-coroutine/concurrent-process-image.png)
 
-## 2. async/await を使った並列処理
+## 2. 並列処理（async/await）
 
 次に、async と await を使った並列処理を見ていきましょう。
 
@@ -167,7 +167,7 @@ fun requestApiWithAsyncAndAwait() {
 
 ![](/images/how-to-use-kotlin-coroutine/parallel-process-image.png)
 
-## 3. launch/join を使った並列処理
+## 3. 並列処理（launch/join）
 
 launch/join を使うと、async/await と同じ並列処理を実現できます。
 
