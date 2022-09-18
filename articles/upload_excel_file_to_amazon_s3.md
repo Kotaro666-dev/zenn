@@ -31,8 +31,6 @@ APIを通じて、フロントエンドからバックエンドに Excel ファ�
 
 # 開発環境
 
-## バックエンド
-
 ```
 $ npm info next version
 12.3.0
@@ -113,7 +111,7 @@ private static convertFileContentsFromBase64ToBinary(fileContents: string): Buff
 
 # S3 からファイルをダウンロードする
 
-S3 にファイルをアップロードする基本的なコードは、[こちらの公式ガイド](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/s3-example-creating-buckets.html#s3-example-creating-buckets-get-object
+S3 からファイルをダウンロードするする基本的なコードは、[こちらの公式ガイド](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/s3-example-creating-buckets.html#s3-example-creating-buckets-get-object
 )をご覧ください。
 
 S3からファイルをダウンロードしたレスポンスのうち、ファイルデータは `Body` に格納されています。
