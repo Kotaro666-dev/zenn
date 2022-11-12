@@ -40,7 +40,7 @@ published: true
 
 # 開発環境
 
-```
+```bash
 fvm flutter --version
 Flutter 3.3.6 • channel stable • https://github.com/flutter/flutter.git
 Framework • revision 6928314d50 (2 weeks ago) • 2022-10-25 16:34:41 -0400
@@ -65,7 +65,7 @@ dev_dependencies:
 
 Path: pigeons/story.dart
 
-```
+```dart
 import 'package:pigeon/pigeon.dart';
 
 class Story {
@@ -100,7 +100,7 @@ abstract class HostStoryApi {
 以下のようなコマンドを通じて、生成できます。
 それぞれのオプションに付与しているパス名は各自の環境で変更してください。
 
-```
+```bash
 flutter pub run pigeon \
     --input pigeons/story.dart \
     --dart_out lib/pigeons_output/story.dart \
