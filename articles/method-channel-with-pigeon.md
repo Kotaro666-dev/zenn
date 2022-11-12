@@ -3,7 +3,7 @@ title: "【Flutter】型安全に MethodChannel でネイティブとデータ�
 emoji: "🐈"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Flutter", "iOS", "MethodChannel", "pigeon"]
-published: false
+published: true
 ---
 
 # 概要
