@@ -8,8 +8,12 @@ published_at: 2022-12-01 00:00
 ---
 
 :::message
-こんにちは、エヌ次元株式会社 Advent Calendar 2022 の 1 日目を担当する [Kotaro666-dev](https://twitter.com/Kotaro666_dev) です。
+こんにちは、[エヌ次元株式会社 Advent Calendar 2022](https://qiita.com/advent-calendar/2022/nzigen) の 1 日目を担当する [Kotaro666-dev](https://twitter.com/Kotaro666_dev) です。
 :::
+
+今年初参加の記念すべきトップバッターを務めさせていただきます。
+
+私はエヌ次元でモバイルアプリ開発エンジニアをやっています。
 
 # 意思決定をたくさんした 1 年
 
