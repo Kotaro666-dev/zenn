@@ -1,8 +1,8 @@
 ---
 title: "【Androidネイティブ】マルチモジュール化を試してみた"
-emoji: "📚"
+emoji: "👨‍🔧"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["Android", "Kotlin", "マルチモジュール"]
 published: false
 ---
 
