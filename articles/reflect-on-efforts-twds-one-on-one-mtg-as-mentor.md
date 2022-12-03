@@ -3,7 +3,7 @@ title: "1on1 でのメンターとしての取り組みを振り返る"
 emoji: "😺"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["1on1", "メンター"]
-published: false
+published: true
 ---
 
 :::message
