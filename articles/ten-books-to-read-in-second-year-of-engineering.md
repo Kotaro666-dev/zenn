@@ -3,7 +3,8 @@ title: "エンジニア 2 年目に読んで良かった本 10 選"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["本", "技術書", "2年目"]
-published: false
+published: true
+published_at: 2022-12-14 00:00
 ---
 
 :::message
