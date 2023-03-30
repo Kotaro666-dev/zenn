@@ -3,7 +3,7 @@ title: "初めての転職活動の備忘録 in 2023"
 emoji: "📝"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["転職活動", "内定"]
-published: false
+published: true
 ---
 
 2022 年 11 月から 2023 年 2 月にかけて、ソフトウェアエンジニアとして初めての転職活動を行いました。
